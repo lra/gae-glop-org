@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="tGc5sRSWqtae4a9h_5Czuh-QLXwINPdsdlPfeFkwrpU" />
+	<meta charset="UTF-8">
+	<style type="text/css">
+        @import url(http://fonts.googleapis.com/css?family={{url_encoded_font}});
+		body {
+			background-color: #2E2633;
+            font-family: '{{font}}', Tahoma, sans-serif;
+			font-size: 24px;
+			color: #EFFFCD;
+			text-shadow: #000000 3px 3px 5px;
+			padding: 50px;
+		}
+		a {
+			font-size: 125%;
+			color: #D55782;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #FC828D;
+		}
+		a.fakelink {
+			color: #5782D5;
+			border-bottom: 1px dashed #5782D5;
+		}
+		a.fakelink:hover {
+			color: #828DFC;
+			border-bottom: none;
+		}
+		div {
+			margin: 50px;
+		}
+		div.left {
+			width: 500px;
+			float: left;
+		}
+		div.right {
+			margin-left: 650px;
+			margin-top: 200px;
+			display: none;
+		}
+		div.right a {
+			font-size: 100%;
+		}
+		#tooltip {
+			display: none;
+			font-size: 75%;
+			text-align: right;
+		}
+		.normal {
+			font-size: 200%;
+			color: #D55782;
+		}
+	</style>
+	<script type="text/javascript">
+		function showStuff(id)
+		{
+			document.getElementById(id).style.display = 'block';
+		}
+		function hideStuff(id)
+		{
+			document.getElementById(id).style.display = 'none';
+		}
+		function clickWebapps()
+		{
+			hideStuff('software');
+			hideStuff('websites');
+			showStuff('webapps');
+			return false;
+		}
+		function clickSoftware()
+		{
+			hideStuff('websites');
+			hideStuff('webapps');
+			showStuff('software');
+			return false;
+		}
+		function clickWebsites()
+		{
+			hideStuff('software');
+			hideStuff('webapps');
+			showStuff('websites');
+			return false;
+		}
+	</script>
+	<title>Laurent Raufaste</title>
+</head>
+<body>
+<div class="left">
+	<p>
+		Hi, I'm <a class="fakelink" href="http://www.glop.org/">Laurent Raufaste</a><a id="asterisk" href="#" onMouseOut="hideStuff('tooltip')" onMouseOver="showStuff('tooltip')">*</a> and I live in <a href="http://maps.google.com/maps?q=New+York,+NY&hl=en&sll=37.0625,-95.677068&sspn=46.812293,93.076172&z=11">New York, USA</a>.
+	</p>
+	<p>
+		I'm a Technical Lead for <a href="http://www.freshplanet.com/">FreshPlanet</a>, and I used to be a Web Architect for <a href="http://www.over-blog.com/">OverBlog</a> and a Web Developer for <a href="http://www.voila.fr/">Voila</a>.
+	</p>
+	<p>
+		In my spare time, I'm the webmaster of <a href="http://www.pouet.net/">Pouet.net</a>, and I'm doing <a class="fakelink" href="#" onclick="clickWebapps();">webapps</a>, <a class="fakelink" href="#" onclick="clickSoftware();">software</a> and <a class="fakelink" href="#" onclick="clickWebsites();">websites</a> to fill people needs.
+	</p>
+	<p>
+		Feel free to follow <a href="http://twitter.com/lrauf">my tweets</a> and <a href="http://blog.glop.org/">my blog</a> to stay in touch ! Or just <a href="mailto:analogue@glop.org">contact me</a>.
+	</p>
+	<p id="tooltip">
+		<span class="normal">*</span> Click on my name to try a new font
+	</p>
+</div>
+<div id="webapps" class="right">
+	Web applications I've brougth online
+	<ul>
+		<li>An <a href="gamercard/">Xbox Live Gamercard generator</a></li>
+		<li>A <a href="lineage2/">Lineage 2 server status</a></li>
+		<li>A <a href="guildwars">GuildWars guild data parser</a></li>
+		<li>A page showing how much it's <a href="referrers/">spam referrered</a></li>
+		<li>The <a href="playlist/">live playlist history</a> of Radio FG</li>
+		<li>An <a href="essential-mix-radio/">Essential Mix Radio</a></li>
+	</ul>
+</div>
+<div id="software" class="right">
+	Software I've made
+	<ul>
+		<li><a href="moopeg/">Moopeg</a>, a lightweight video player</li>
+		<li><a href="shoutstats/">Shoutstats</a> to monitor your shoutcast servers</li>
+		<li><a href="swen/">Swen</a>, a precursor to feed readers</li>
+		<li><a href="singit/">SingIT</a>, a lyrics displayer</li>
+		<li><a href="sotb/">Shadow of the Blitz</a>, a parallax scroll demo</li>
+	</ul>
+</div>
+<div id="websites" class="right">
+	Websites I manage
+	<ul>
+		<li>The <a href="starforce/">Boycott StarForce</a> website</li>
+		<li>The <a href="sonique/">Sonique Museum</a></li>
+		<li>The <a href="nad/">Nad Museum</a></li>
+		<li>The <a href="http://www.bakec.com/">Bakec</a>'s clan website</li>
+		<li><a href="donors/">Donations</a> I've received</li>
+		<li>And some <a href="junk/">Junk</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-107561-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
